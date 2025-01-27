@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_pokedex">
+
+
+    <fragment
+        android:id="@+id/nav_pokedex"
+        android:name="com.lopezgagonuria_pmdm.u3.PokedexFragment"
+        android:label="@string/pok_dex"
+        tools:layout="@layout/fragment_pokedex" />
+    <fragment
+        android:id="@+id/nav_capturados"
+        android:name="com.lopezgagonuria_pmdm.u3.nav_capturados"
+        android:label="@string/Captured"
+        tools:layout="@layout/fragment_nav_capturados" />
+
+
+    <fragment
+        android:id="@+id/preferenceScreen"
+
+        android:name="com.lopezgagonuria_pmdm.u3.ScreenSettingsFragment"
+        android:label="@string/settings_menu_bottom">
+
+    </fragment>
+</navigation>

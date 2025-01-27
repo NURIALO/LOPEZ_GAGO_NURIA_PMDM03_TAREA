@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_yellow"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar para la navegación -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:theme="@style/ToolbarStyle"
+            android:gravity="center"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_toolbar"
+            android:titleTextColor="@color/yellow_cardview"
+            app:title="Pokédex App"
+            app:titleCentered="true"
+            />
+    <!--   android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+   </com.google.android.material.appbar.AppBarLayout>
+
+   <!-- Contenedor principal para los fragmentos -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:navGraph="@navigation/nav_graph"
+        android:name="androidx.navigation.fragment.NavHostFragment" />
+
+    <!-- BottomNavigationView para las pestañas -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/blue_toolbar"
+        app:itemTextColor="@color/yellow_cardview"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <!-- Contenedor del fragmento para detalles del Pokémon -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="56dp" 
+    android:visibility="invisible" /> <!-- Oculto por defecto hasta que se muestre -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

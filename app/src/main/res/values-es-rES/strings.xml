@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Otras cadenas ya existentes -->
+
+    <string name="app_name">U3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_button">Close Details Fragment Pokemons</string>
+    <string name="delete_button">Close Details Fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- Cambio idioma -->
+    <string name="Available_data">Actualmente no hay datos disponibles, no se ha capturado ningún Pokemon. Date prisa...!!! VE A POR TUS POKEMONS!!!!!!!!</string>
+    <string name="button_back">VOLVER</string>
+    <string name="button_delete">BORRAR</string>
+    <string name="pokedex">Lista de Pokemons</string>
+    <string name="my_pokemons">Mis Pokemons</string>
+    <string name="settings">Ajustes</string>
+    <string name="pok_dex">LISTA DE POKEDEXS</string>
+    <string name="Captured">POKEMONS CAPTURADOS</string>
+    <string name="settings_menu_bottom">AJUSTES</string>
+    <string name="language">Idioma</string>
+    <string name="general_options">Opciones Generales</string>
+    <string name="delete_pokemon_options">Eliminar Pokemon</string>
+    <string name="description_delete_pokemon_option">Cuando está activado, te permite eliminar Pokémon capturados</string>
+    <string name="allow_remove_from_option">Permitir la eliminación de Pokemons</string>
+    <string name="information">Información</string>
+    <string name="about">Acerca de</string>
+    <string name="close_session">Cerrar sesión</string>
+    <string name="nombre_pokemon">Nombre</string>
+    <string name="tipos_pokemons">Tipo</string>
+
+    <string name="peso">"Peso: "</string>
+    <string name="altura">"Altura: "</string>
+    <string name="tipo">"Tipo : "</string>
+
+    <string name="acerca_de">Acerca de...</string>
+    <string name="datos_desarrollador">Nombre del desarrollador : \nNuria López Gago\nVersión 1.0.0</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="habilitar_eliminar">La eliminación está habitada</string>
+
+    <string name="type_icon1">Icono tipo pokemon 1</string>
+    <string name="type_icon2">Icono tipo pokemon 2</string>
+    <string name="dato_no_disponible">Dato no disponible</string>
+</resources>

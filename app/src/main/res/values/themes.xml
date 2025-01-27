@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base para la aplicación -->
+    <style name="Base.Theme.U3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores principales de la aplicación -->
+        <item name="colorPrimary">@color/blue_toolbar</item>
+        <item name="colorPrimaryDark">@color/blue_toolbar</item>
+        <item name="android:windowBackground">@color/yellow_cardview</item>
+        <item name="android:textColor">@color/text_blue</item>
+    </style>
+
+    <!-- Tema principal que extiende el tema base -->
+    <style name="Theme.U3" parent="Base.Theme.U3">
+        <!-- Tema de las preferencias personalizado -->
+        <item name="preferenceTheme">@style/PreferencesTheme.Custom</item>
+    </style>
+
+</resources>

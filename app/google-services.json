@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "732810556618",
+    "project_id": "comlopezgagonuriapmdmu3",
+    "storage_bucket": "comlopezgagonuriapmdmu3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732810556618:android:cc69bcd01d560e74513033",
+        "android_client_info": {
+          "package_name": "com.lopezgagonuria_pmdm.u3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3X-XgZR5ws38M6OPDk0YZTmOExmKY3-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

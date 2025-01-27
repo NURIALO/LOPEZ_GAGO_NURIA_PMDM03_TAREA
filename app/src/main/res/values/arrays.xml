@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Opciones de idioma para la preferencia de idioma -->
+    <string-array name="language_options">
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
+
+    <!-- Valores asociados a las opciones de idioma -->
+    <string-array name="language_values">
+        <item>es</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- Opciones de "Acerca de" -->
+    <string-array name="about_options">
+        <item>Acerca del desarrollador</item>
+        <item>Acerca de la aplicación</item>
+    </string-array>
+
+    <!-- Valores asociados a las opciones de "Acerca de" -->
+    <string-array name="about_values">
+        <item>developer</item>
+        <item>app</item>
+    </string-array>
+
+    <!-- Entradas y valores para otras preferencias -->
+    <string-array name="reply_entries">
+        <item>Nuria López Gago</item>
+
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>"Versión 1.0.0"</item>
+
+    </string-array>
+</resources>

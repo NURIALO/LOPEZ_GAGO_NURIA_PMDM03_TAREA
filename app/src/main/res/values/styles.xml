@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estilo para las Toolbars -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/yellow_cardview</item> <!-- Cambia el color del título -->
+        <item name="subtitleTextColor">@color/yellow_cardview</item> <!-- Cambia el color del subtítulo -->
+        <item name="titleCentered">true</item> <!-- Centrar título -->
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item> <!-- Alineación del texto -->
+        <item name="android:textSize">34sp</item> <!-- Tamaño del texto -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Estilo para los botones -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/text_blue</item>
+        <item name="android:textColor">@color/yellow_cardview</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Tema para las preferencias personalizado -->
+    <style name="PreferencesTheme.Custom" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Estilo para los títulos de categorías de preferencias -->
+        <item name="preferenceCategoryStyle">@style/CustomPreferenceCategory</item>
+        <!-- Estilo para los títulos de las preferencias -->
+        <item name="preferenceStyle">@style/CustomPreferenceTitle</item>
+        <!-- Estilo para el fragmento de preferencias -->
+        <item name="preferenceFragmentStyle">@style/CustomPreferenceFragment</item>
+        <!-- Estilo para el SwitchPreferenceCompat -->
+        <item name="switchPreferenceCompatStyle">@style/CustomSwitchPreference</item>
+        <!-- Estilo para ListPreference -->
+
+
+    </style>
+
+    <!-- Estilo para las categorías de preferencias -->
+    <style name="CustomPreferenceCategory">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- Estilo para los títulos de las preferencias -->
+    <style name="CustomPreferenceTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- Estilo para el fragmento de preferencias -->
+    <style name="CustomPreferenceFragment">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <!-- Estilo para SwitchPreferenceCompat -->
+    <style name="CustomSwitchPreference" parent="Preference.SwitchPreferenceCompat">
+        <item name="android:thumbTint">@color/blue_toolbar</item> <!-- Color del botón deslizante -->
+        <item name="android:trackTint">@color/yellow_cardview</item> <!-- Color del riel del switch -->
+        <item name="android:titleTextAppearance">@style/CustomPreferenceTitle</item> <!-- Estilo del título -->
+    </style>
+
+    <!-- Estilo para los resúmenes de las preferencias -->
+    <style name="CustomPreferenceSummary">
+        <item name="android:textSize">16sp</item> <!-- Tamaño del resumen -->
+        <item name="android:textColor">#555555</item> <!-- Color del texto -->
+    </style>
+
+    <!-- Estilo para ListPreference -->
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_cardview"
+    android:padding="16dp"
+  >
+
+    <!-- Imagen del Pokémon -->
+
+
+    <ImageView
+        android:id="@+id/imageCharacterDetail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        android:layout_margin="14dp"/> <!-- Ocupa el 60% de la altura -->
+    <TextView
+        android:id="@+id/nameTextDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/blue_toolbar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageCharacterDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="14dp"
+        app:layout_constraintVertical_bias="0" />
+    <!-- Nombre del Pokémon -->
+    <TextView
+        android:id="@+id/idPokemon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textColor="@color/blue_toolbar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/nameTextDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="14dp"
+        app:layout_constraintVertical_bias="0" />
+
+    <!-- Tipo del Pokémon -->
+    <TextView
+        android:id="@+id/typeTextDetail"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/blue_toolbar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/idPokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="14dp"
+        app:layout_constraintVertical_bias="0" />
+
+    <!-- Peso -->
+    <TextView
+        android:id="@+id/weightTextDetail"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/blue_toolbar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/typeTextDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="14dp"
+        app:layout_constraintVertical_bias="0" />
+
+    <!-- Altura -->
+    <TextView
+        android:id="@+id/heightTextDetail"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/blue_toolbar"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/weightTextDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="14dp"
+        app:layout_constraintVertical_bias="0" />
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/buttonBack"
+
+        android:layout_width="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_back"
+        style="@style/ButtonStyle"
+        android:backgroundTint="@color/text_blue"
+        android:textColor="@color/yellow_cardview"
+        app:layout_constraintTop_toBottomOf="@id/heightTextDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+        app:layout_constraintWidth_percent="0.35"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="10dp" />
+
+    <!-- Botón para eliminar -->
+    <Button
+        android:id="@+id/buttonDelete"
+
+        android:layout_width="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_delete"
+        style="@style/ButtonStyle"
+
+        android:backgroundTint="@color/text_blue"
+        android:textColor="@color/yellow_cardview"
+        app:layout_constraintTop_toBottomOf="@id/heightTextDetail"
+        app:layout_constraintStart_toEndOf="@id/buttonBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.35"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/PreferencesTheme.Custom">
+    <PreferenceCategory
+        android:title="@string/general_options"
+        >
+
+        <!-- Selector de idioma -->
+        <ListPreference
+            android:key="language"
+            android:title="@string/language"
+            android:entries="@array/language_options"
+            android:entryValues="@array/language_values"
+            android:defaultValue="en"
+            android:layout="@layout/custom_list_preference"
+             />
+
+        <!-- Switch que habilita o deshabilita la preferencia -->
+        <SwitchPreferenceCompat
+            android:key="allow_delete"
+            android:title="@string/delete_pokemon_options"
+            android:summary="@string/description_delete_pokemon_option"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+    <!-- Categoría de Información -->
+    <PreferenceCategory
+        android:title="@string/information"
+   >
+
+        <!-- Preferencia para mostrar el cuadro "Acerca de" -->
+        <Preference
+            android:key="about"
+            android:title="@string/about"
+             />
+
+        <!-- Preferencia para cerrar sesión -->
+        <Preference
+            android:key="logout"
+            android:title="@string/close_session"
+             />
+    </PreferenceCategory>
+</PreferenceScreen>

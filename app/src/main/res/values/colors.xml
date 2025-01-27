@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF6522</color>
+    <color name="yellow">#dfdb84</color>
+    <color name="RED">#F5ADA8</color>
+    <color name="WHITE">#FCFCFC</color>
+
+
+
+    <color name="blue_toolbar">#3B4CCA</color>
+    <color name="red_background">#FF0000</color>
+    <color name="yellow_cardview">#FFCC00</color>
+    <color name="text_blue">#3B4CCA</color>
+    <color name="text_yellow">#FFCC00</color>
+
+</resources>

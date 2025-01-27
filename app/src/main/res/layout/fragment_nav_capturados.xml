@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_background"
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/blue_toolbar"
+        android:text="yellow_cardview"
+        android:visibility="gone" />
+
+
+    <!-- Texto que se muestra si esta la pantalla vacía, sin ningún pokemon capturado -->
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/yellow_cardview"
+        android:visibility="gone"
+        android:padding="28dp"
+        android:textSize="25dp"
+        android:text="@string/Available_data" />
+
+    <!-- RecyclerView para mostrar Pokémon capturados -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCapturados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="56dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
